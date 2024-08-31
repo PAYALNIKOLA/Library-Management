@@ -19,6 +19,18 @@ public class LibraryServiceTest {
         assertTrue(availableBooks.contains(book), "Book should be added to the library");
     }
 
+
+    @Test
+public void testBorrowBook() {
+    LibraryService libraryService = new LibraryService();
+    Book book = new Book("123456789", "Effective Java", "Joshua Bloch", 2008);
+    libraryService.addBook(book);
+
+    assertTrue(libraryService.borrowBook("123456789"), "Should be able to borrow the book");
+    assertFalse(libraryService.borrowBook("123456789"), "Book should not be available after being borrowed");
+}
+
+
     @Test
     public void testViewAvailableBooks() {
         LibraryService libraryService = new LibraryService();
