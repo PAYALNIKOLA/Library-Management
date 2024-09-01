@@ -19,7 +19,7 @@ To run this project, you need to have the following installed:
 - [Maven 3.6.3 or higher](https://maven.apache.org/download.cgi)
 
 ## Project Structure
-library-management-system/ │ ├── src/ │ ├── main/ │ │ └── java/ │ │ └── com/ │ │ └── kata/ │ │ └── library/ │ │ ├── model/ │ │ │ └── Book.java │ │ └── service/ │ │ └── LibraryService.java │ └── test/ │ └── java/ │ └── com/ │ └── kata/ │ └── library/ │ └── service/ │ └── LibraryServiceTest.java │ ├── .gitignore ├── pom.xml └── README.md
+├── src/ │ ├── main/ │ │ └── java/ │ │ └── com/ │ │ └── kata/ │ │ └── library/ │ │ ├── model/ │ │ │ └── Book.java │ │ └── service/ │ │ └── LibraryService.java │ └── test/ │ └── java/ │ └── com/ │ └── kata/ │ └── library/ │ └── service/ │ └── LibraryServiceTest.java │ ├── .gitignore ├── pom.xml └── README.md
 
 
 - `Book.java`: Represents the model for a book in the library.
@@ -40,7 +40,6 @@ library-management-system/ │ ├── src/ │ ├── main/ │ │ └─
    ```bash
    mvn clean install
    
-
 3. **Run the Tests**
 
    Execute the test cases using Maven:
