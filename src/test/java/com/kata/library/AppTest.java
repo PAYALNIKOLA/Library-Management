@@ -7,7 +7,6 @@ public class AppTest {
 
     @Test
     public void testApp() {
-        // This is a simple test that will always pass
         assertTrue(true);
     }
 }

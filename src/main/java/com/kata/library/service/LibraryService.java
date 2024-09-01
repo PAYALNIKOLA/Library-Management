@@ -22,6 +22,15 @@ public class LibraryService {
         return false;
     }
 
+    public boolean returnBook(String isbn) {
+        for (Book book : books) {
+            if (book.getIsbn().equals(isbn) && !book.isAvailable()) {
+                book.setAvailable(true);
+                return true;
+            }
+        }
+        return false;
+    }
 
     public List<Book> viewAvailableBooks() {
         List<Book> availableBooks = new ArrayList<>();

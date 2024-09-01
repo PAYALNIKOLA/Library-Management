@@ -19,7 +19,6 @@ public class LibraryServiceTest {
         assertTrue(availableBooks.contains(book), "Book should be added to the library");
     }
 
-
     @Test
 public void testBorrowBook() {
     LibraryService libraryService = new LibraryService();
@@ -30,6 +29,16 @@ public void testBorrowBook() {
     assertFalse(libraryService.borrowBook("123456789"), "Book should not be available after being borrowed");
 }
 
+@Test
+public void testReturnBook() {
+    LibraryService libraryService = new LibraryService();
+    Book book = new Book("123456789", "Effective Java", "Joshua Bloch", 2008);
+    libraryService.addBook(book);
+    libraryService.borrowBook("123456789");
+
+    assertTrue(libraryService.returnBook("123456789"), "Should be able to return the borrowed book");
+    assertTrue(libraryService.viewAvailableBooks().contains(book), "Book should be available after return");
+}
 
     @Test
     public void testViewAvailableBooks() {
