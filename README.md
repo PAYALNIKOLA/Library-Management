@@ -17,7 +17,6 @@ To run this project, you need to have the following installed:
 
 - [Java JDK 11 or higher](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 - [Maven 3.6.3 or higher](https://maven.apache.org/download.cgi)
-- [Git](https://git-scm.com/)
 
 ## Project Structure
 library-management-system/ │ ├── src/ │ ├── main/ │ │ └── java/ │ │ └── com/ │ │ └── kata/ │ │ └── library/ │ │ ├── model/ │ │ │ └── Book.java │ │ └── service/ │ │ └── LibraryService.java │ └── test/ │ └── java/ │ └── com/ │ └── kata/ │ └── library/ │ └── service/ │ └── LibraryServiceTest.java │ ├── .gitignore ├── pom.xml └── README.md
@@ -32,7 +31,7 @@ library-management-system/ │ ├── src/ │ ├── main/ │ │ └─
 1. **Clone the Repository**
 
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/PAYALNIKOLA/Library-Management
    cd library-management-system
 
 2. **Build the Project**
