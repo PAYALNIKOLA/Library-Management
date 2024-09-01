@@ -33,23 +33,17 @@ library-management-system/ │ ├── src/ │ ├── main/ │ │ └─
 
    ```bash
    git clone <your-repo-url>
-   cd kata-library-management
+   cd library-management-system
 
 2. **Build the Project**
    
-Use Maven to compile the project and execute the test cases:
-```bash
-mvn clean install
-mvn test
+   Use Maven to compile the project:
+   ```bash
+   mvn clean install
+   
 
+3. **Run the Tests**
 
-
-
-
-
-
-
-
-
-
-
+   Execute the test cases using Maven:
+   ```bash
+   mvn test
